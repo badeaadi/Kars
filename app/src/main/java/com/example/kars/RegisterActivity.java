@@ -35,12 +35,16 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
+        mEditTextEmail = findViewById(R.id.email);
+        mEditTextPassword = findViewById(R.id.password_register);
+        mEditTextPasswordConfirm = findViewById(R.id.password_confirmation_register);
+
         configureBackButton();
 
         mAuth = FirebaseAuth.getInstance();
 
 
-        //configureRegisterButton();
+        configureRegisterButton();
     }
     private void configureBackButton() {
         Button mButtonRegister = findViewById(R.id.regLogin);
