@@ -20,10 +20,7 @@ git clone https://github.com/badeaadi/Kars
 ```
 
 ## UML diagrams
-*The diagram describes how the components interact with each other*
+*The diagram below describes how the components interact with each other*
 
-```mermaid
-sequenceDiagram
-LogInActivity->> MainActivity: Log In
-LogInActivity->>RegisterActivity: Register
-RegisterActivity->> MainActivity: Succesfully registered
+![alt text](https://github.com/badeaadi/Kars/blob/master/diagram.png)
+
