@@ -9,7 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Profile"></activity>
+
+    <meta-data
+        android:name="com.google.android.gms.ads.APPLICATION_ID"
+        android:value="ca-app-pub-2583312812598957~3070270602"/>
+
+        <activity android:name=".SaveCar">
+
+
+        </activity>
 
         <activity android:name=".RegisterActivity">
             <intent-filter>

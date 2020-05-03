@@ -15,4 +15,6 @@
     <string name="prompt_username">Username</string>
     <string name="prompt_phone">Phone</string>
     <string name="welcome_to_registration_by_kars">Welcome to registration by Kars</string>
+    <string name="save_menu">save_menu</string>
+    <string name="Save">Save</string>
 </resources>
