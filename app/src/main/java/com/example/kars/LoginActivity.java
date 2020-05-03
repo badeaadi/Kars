@@ -21,9 +21,15 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         configureButton();
+        configureLoginButton();
 
         mAuth = FirebaseAuth.getInstance();
     }
+
+    private void configureLoginButton() {
+        Button mButtonRegister = findViewById(R.id.logLogin);
+    }
+
     @Override
     public void onStart () {
         super.onStart();
