@@ -18,40 +18,40 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 
-public class SaveCar extends AppCompatActivity {
+public class VignetteActivity extends AppCompatActivity {
 
     private FirebaseAuth mAuth;
     private DatabaseReference mDatabase;
-
-    private Button to_vignette;
-
+    private Button to_itp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
 
         super.onCreate(savedInstanceState);
-        setContentView(layout.activity_save_car);
+        setContentView(layout.activity_vignette);
         mAuth = FirebaseAuth.getInstance();
 
 
         final FirebaseUser currentUser = mAuth.getCurrentUser();
         mDatabase = FirebaseDatabase.getInstance().getReference();
 
-        to_vignette = findViewById(id.button_to_vignette);
-        to_vignette.setOnClickListener(new View.OnClickListener() {
+        //toLocation(currentUser);
+        Button toLocation = findViewById(id.button);
+        to_itp = findViewById(id.button_to_itp);
+
+        to_itp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent myIntent = new Intent(SaveCar.this, VignetteActivity.class);
+                Intent myIntent = new Intent(VignetteActivity.this, SaveCar.class);
                 startActivity(myIntent);
             }
         });
 
-        Button toLocation = findViewById(id.button);
         toLocation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent myIntent = new Intent(SaveCar.this, MapsActivity.class);
+                Intent myIntent = new Intent(VignetteActivity.this, MapsActivity.class);
                 startActivity(myIntent);
             }
         });
